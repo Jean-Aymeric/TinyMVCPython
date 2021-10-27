@@ -16,4 +16,7 @@ class Controller(IActionPerformer):
         self.__model = model
 
     def start(self) -> None:
-        self.__view.showMessage(self.__model.getMessage())
+        self.__view.askNum()
+
+    def performUpdateNum(self, num: int) -> None:
+        self.__view.showMessage(self.__model.getMessage(num))

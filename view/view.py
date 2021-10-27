@@ -18,3 +18,8 @@ class View(Observer, IView):
 
     def showMessage(self, message: str) -> None:
         print(message)
+
+    def askNum(self) -> int:
+        while(True):
+            print("Entrez un numéro :")
+            self.__actionPerformer.performUpdateNum(int(input()))

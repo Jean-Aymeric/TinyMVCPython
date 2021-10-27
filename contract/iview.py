@@ -15,3 +15,7 @@ class IView(ABC):
     @abstractmethod
     def setModel(self, model: IModel) -> None:
         ...
+
+    @abstractmethod
+    def askNum(self) -> int:
+        ...

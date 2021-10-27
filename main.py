@@ -5,7 +5,8 @@ from view.viewTkinter import ViewTkinter
 
 controller = Controller()
 model = Model()
-view = ViewTkinter()
+viewtk = ViewTkinter()
+view = View()
 controller.setModel(model)
 controller.setView(view)
 

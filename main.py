@@ -8,6 +8,6 @@ model = Model()
 viewtk = ViewTkinter()
 view = View()
 controller.setModel(model)
-controller.setView(view)
+controller.setView(viewtk)
 
 controller.start()
